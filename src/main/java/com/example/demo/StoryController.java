@@ -13,13 +13,13 @@ public class StoryController {
     @Autowired
     private SlowNetworkSimulator slowNetworkSimulator;
 
-    @GetMapping("/story.json")
+    @GetMapping("/api/story.json")
     @ResponseBody
     public Story getStory() {
         return storyRepository.getStory();
     }
 
-    @GetMapping("/chapter-{id}.json")
+    @GetMapping("/api/chapter-{id}.json")
     @ResponseBody
     public Chapter getChapter(@PathVariable int id) {
         slowNetworkSimulator.waitForRandomTime();
