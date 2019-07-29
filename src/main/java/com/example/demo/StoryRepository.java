@@ -19,11 +19,11 @@ public class StoryRepository {
         Story story = new Story();
         story.setHeading("<h1>A story about something</h1>");
         story.setChapterUrls(Arrays.asList(
-                "chapter-1.json",
-                "chapter-2.json",
-                "chapter-3.json",
-                "chapter-4.json",
-                "chapter-5.json"
+                "api/chapter-1.json",
+                "api/chapter-2.json",
+                "api/chapter-3.json",
+                "api/chapter-4.json",
+                "api/chapter-5.json"
         ));
         return story;
     }
