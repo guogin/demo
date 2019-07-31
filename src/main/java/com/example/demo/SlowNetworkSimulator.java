@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class SlowNetworkSimulator {
     public void waitForRandomTime() {
         try {
-            Thread.sleep(random(0, 1) * 1000);
+            Thread.sleep(random(200, 1000)); // Simulate latency from 200ms to 1000ms
         } catch (InterruptedException e) {
             // nothing
         }
